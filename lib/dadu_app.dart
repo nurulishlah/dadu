@@ -1,4 +1,4 @@
-import 'package:dadu/dadu_page.dart';
+import 'package:dadu/pages/dadu_page.dart';
 import 'package:flutter/material.dart';
 
 class DaduApp extends StatelessWidget {

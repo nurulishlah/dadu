@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import 'package:dadu/dadu.dart';
+import 'package:dadu/widgets/dadu.dart';
 
 class DaduPage extends StatefulWidget {
   const DaduPage({
