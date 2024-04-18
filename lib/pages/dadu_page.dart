@@ -1,8 +1,10 @@
 import 'dart:math';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:dadu/widgets/dadu.dart';
+import 'package:flutter/widgets.dart';
 
 class DaduPage extends StatefulWidget {
   const DaduPage({
@@ -55,15 +57,24 @@ class _DaduPageState extends State<DaduPage> {
               ],
             ),
             const Spacer(),
-            FilledButton(
-              onPressed: () {
-                setState(() {
-                  nomorDaduKiri = Random().nextInt(6) + 1;
-                  nomorDaduKanan = Random().nextInt(6) + 1;
-                  jumlahNilai = nomorDaduKiri + nomorDaduKanan;
-                });
-              },
-              child: const Text('Acak Dadu'),
+            Expanded(
+              child: FilledButton(
+                onPressed: () {
+                  setState(() {
+                    nomorDaduKiri = Random().nextInt(6) + 1;
+                    nomorDaduKanan = Random().nextInt(6) + 1;
+                    jumlahNilai = nomorDaduKiri + nomorDaduKanan;
+                  });
+                },
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.dock),
+                    SizedBox(width: 8),
+                    Text('Acak Dadu'),
+                  ],
+                ),
+              ),
             ),
             const Spacer(),
           ],
