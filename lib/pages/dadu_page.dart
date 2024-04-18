@@ -51,7 +51,7 @@ class _DaduPageState extends State<DaduPage> {
               children: [
                 Dadu(nomorDadu: nomorDaduKiri),
                 const SizedBox(width: 8.0),
-                Dadu(nomorDadu: nomorDaduKiri)
+                Dadu(nomorDadu: nomorDaduKanan)
               ],
             ),
             const Spacer(),
